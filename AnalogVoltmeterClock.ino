@@ -35,6 +35,7 @@ void setup () {
 
   // command to execute prior to upload:
   // date +"rtc.adjust(DateTime(%Y, %m, %d, %I, %M, %S));" | sed -e 's/ 0/ /g'
+  rtc.adjust(DateTime(2020, 10, 11, 2, 32, 55));
 }
 
 void loop () {
