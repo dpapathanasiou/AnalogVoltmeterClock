@@ -34,6 +34,10 @@ With a battery connected to the RTC chip, replace [line 38 of the sketch](Analog
 date +"rtc.adjust(DateTime(%Y, %m, %d, %I, %M, %S));" | sed -e 's/ 0/ /g'
 ```
 
+## Faceplates
+
+For the [round voltmeters](https://amzn.to/34KMszY), open the [voltmeter-faceplate.svg](voltmeter-faceplate.svg) file with [inkscape](https://inkscape.org/) and print.
+
 ## Acknowledgements
 
 * [Michael Teeuw's Analog Voltmeter Clock](https://michaelteeuw.nl/post/174972004187/what-time-is-it-fathers-day)
