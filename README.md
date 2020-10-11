@@ -26,6 +26,14 @@ This project provides code and wiring diagrams for building a clock using three 
 
 *note:* not every digital pin supports [pulse wave modulation (PWM)](http://arduino.cc/en/Tutorial/PWM); check [this guide](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/) to find the correct pins by Arduino model.
 
+## Setting the time
+
+With a battery connected to the RTC chip, replace [line 38 of the sketch](AnalogVoltmeterClock.ino#L38), using this command, just prior to uploading the sketch to the device:
+
+```sh
+date +"rtc.adjust(DateTime(%Y, %m, %d, %I, %M, %S));" | sed -e 's/ 0/ /g'
+```
+
 ## Acknowledgements
 
 * [Michael Teeuw's Analog Voltmeter Clock](https://michaelteeuw.nl/post/174972004187/what-time-is-it-fathers-day)
