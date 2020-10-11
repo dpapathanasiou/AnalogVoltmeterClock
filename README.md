@@ -21,8 +21,8 @@ This project provides code and wiring diagrams for building a clock using three 
 
 ### Each voltmeter to Arduino
 
-* - (negative) -> Arduino GND
-* + (positive) -> Arduino [PWM Pin](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
+* &minus; (negative) -> Arduino GND
+* &plus; (positive) -> Arduino [PWM Pin](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
 
 *note:* not every digital pin supports [pulse wave modulation (PWM)](http://arduino.cc/en/Tutorial/PWM); check [this guide](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/) to find the correct pins by Arduino model.
 
